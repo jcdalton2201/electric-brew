@@ -2,7 +2,9 @@ import {Component} from '@angular/core';
 
 @Component({
   selector:'brew',
-  template:'<h1>BREW</h1>'
+  template:`
+  <div class='brew-main'> Main pages</div>
+  `
 })
 export class brewComponent {
   constructor(){

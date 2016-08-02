@@ -3,8 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Brew Day</title>
+    <link rel="stylesheet" href="main.css">
+    <style media="screen">
+      body {
+        background-image: url('images/background.jpeg');
+      }
+    </style>
   </head>
-  <body>
+  <body style="background-size:cover">
+    <nav>
+      <ul class="menu vertical">
+        <li><a href="#">Recipes</a>
+          <ul class="menu vertical nested">
+            <li><a href="#">Add</a></li>
+            <li><a href="#">List</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Brewing</a></li>
+        <li><a href="#">Equipment</a></li>
+      </ul>
+    </nav>
     <brew></brew>
   </body>
   <script src="app.js" charset="utf-8"></script>

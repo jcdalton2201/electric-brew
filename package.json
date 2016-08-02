@@ -7,7 +7,8 @@
     "start": "src/*.js"
   },
   "scripts": {
-    "prestart": "node ./node_modules/browserify/bin/cmd.js ./src/app.js -d -o dist/app.js -t [babelify] ",
+    "sass": "sass ./styles/main.scss ./dist/main.css",
+    "prestart": "npm run sass| node ./node_modules/browserify/bin/cmd.js ./src/app.js -d -o dist/app.js -t [babelify] ",
     "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "npm-watch"
@@ -41,6 +42,7 @@
     "eslint-config-standard": "^5.3.5",
     "eslint-plugin-promise": "^2.0.0",
     "eslint-plugin-standard": "^2.0.0",
+    "foundation-sites": "^6.2.3",
     "watchify": "^3.7.0"
   },
   "dependencies": {
