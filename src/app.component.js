@@ -1,5 +1,6 @@
 import {Component} from '@angular/core';
 import {ROUTER_DIRECTIVES} from '@angular/router';
+import {Fermentables} from './data/grain';
 
 @Component({
   selector:'brew',
@@ -20,10 +21,14 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
     <router-outlet></router-outlet>
   </div>
   `,
-  directives:[ROUTER_DIRECTIVES]
+  directives:[ROUTER_DIRECTIVES],
 })
 export class brewComponent {
-  constructor(){
+  constructor(fermentables:Fermentables){
     console.log('test of brew');
+    this.fermentables = fermentables;
+  }
+  ngOnInit(){
+    console.log(this.fermentables.fermentables);
   }
 }

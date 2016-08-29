@@ -2,6 +2,7 @@ import {provideRouter, RouterConfig} from '@angular/router';
 import {RecipesList} from './recipes/listRecipes';
 import {RecipesAdd} from './recipes/addRecipes';
 import {Empty} from './empty';
+
 const routes: RouterConfig = [
   {
     path:'',
